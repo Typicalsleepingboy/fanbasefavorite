@@ -1,4 +1,5 @@
-{
+{ 
+    "version": 2,
     "routes": [
         { "src": "/", "dest": "/home.html" },
         { "src": "/login", "dest": "/page/login.html" },
