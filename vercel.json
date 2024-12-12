@@ -1,9 +1,13 @@
-{ 
+{
     "version": 2,
-    "routes": [
-        { "src": "/", "dest": "/home.html" },
-        { "src": "/login", "dest": "/page/login.html" },
-        { "src": "/dashboard", "dest": "/page/dashboard.html" },
-        { "src": "/(.*)", "dest": "/home.html" }
+    "rewrites": [
+        {
+            "source": "/",
+            "destination": "/home.html"
+        },
+        {
+            "source": "/:path*",
+            "destination": "/:path*.html"
+        }
     ]
 }
