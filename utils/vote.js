@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", async () => {
-  const jsonFilePath = "./json/cadnd.json";
+  const jsonFilePath = "./json/cand.json";
 
   const voteModal = document.getElementById("voteModal");
   const cancelVote = document.getElementById("cancelVote");
