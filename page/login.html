@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>48Intens Voting</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-gradient-to-r from-blue-900 to-blue-500 min-h-screen flex flex-col justify-center items-center">
+
+    <nav class="bg-white shadow-md w-full">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-blue-900">Admin Login</h1>
+        </div>
+    </nav>
+
+    <main class="container flex justify-center items-center py-16 w-80"> <!-- Increased py-16 to push down -->
+        <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
+            <h2 class="text-xl font-semibold text-blue-900 text-center mb-6">Login to Admin Panel</h2>
+
+            <form id="adminLoginForm" class="bg-white p-6 rounded-lg shadow-md max-w-sm mx-auto">
+                <div id="feedbackMessage" class="hidden">
+                </div>
+
+                <label for="username" class="block mb-2 text-sm font-medium text-gray-700">Username</label>
+                <input type="text" id="username" class="w-full border rounded-lg px-4 py-2 mb-4"
+                    placeholder="Enter your username" required>
+
+                <label for="password" class="block mb-2 text-sm font-medium text-gray-700">Password</label>
+                <input type="password" id="password" class="w-full border rounded-lg px-4 py-2 mb-4"
+                    placeholder="Enter your password" required>
+
+                <button type="submit" class="bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600 w-full">
+                    Login
+                </button>
+            </form>
+
+        </div>
+    </main>
+
+    <footer class="bg-blue-900 p-8 mt-auto w-full">
+        <div class="flex flex-col md:flex-row justify-between items-start mb-8">
+            <div class="text-white text-2xl font-bold mb-6 md:mb-0">48Intens <span
+                    class="text-white text-lg text-base font-thin">Voting Website</span></div>
+        </div>
+        <div class="border-t border-white pt-8 flex flex-col md:flex-row justify-between items-center">
+            <p class="text-white mb-4 md:mb-0">&copy; 2024 48Intens Voting. All rights reserved.</p>
+            <div class="flex space-x-4">
+                <p class="text-white mb-4 md:mb-0">Version : 0.7.5</p>
+                <a href="https://github.com/Typicalsleepingboy" class="text-white hover:text-white">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.instagram.com/_naufaldzaky1/" class="text-white hover:text-white">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://x.com/Typicalsleeping" class="text-white hover:text-white">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/utils/login.js"></script>
+</body>
+
+</html>

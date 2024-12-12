@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>48Intens Voting</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+</head>
+
+<body class="min-h-screen bg-white text-gray-800">
+    <nav class="bg-blue-900 text-white py-4">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <h1 class="text-2xl font-bold">48Intens Voting</h1>
+            <div class="md:hidden flex items-center">
+                <button id="hamburger-icon" class="text-white">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <ul id="navbarMenu" class="hidden lg:flex space-x-6">
+                <li><a href="#" class="hover:underline">Home</a></li>
+                <li><a href="#candidates" class="hover:underline">Candidates</a></li>
+            </ul>
+        </div>
+
+        <div id="mobile-menu" class="md:hidden hidden  p-3 space-y-4">
+            <a href="#" class="block text-white hover:bg-blue-800 p-2 rounded">Home</a>
+            <a href="#candidates" class="block text-white hover:bg-blue-800 p-2 rounded">Candidates</a>
+        </div>
+    </nav>
+    <header class="bg-blue-900 text-white py-16 text-center">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl lg:text-6xl font-extrabold mb-4">Vote for Your Favorite JKT48 Fanbase!</h1>
+            <p class="text-lg lg:text-xl mb-6">Support the community you love and make your voice heard.</p>
+            <a href="#candidates"
+                class="bg-white text-blue-900 px-6 py-3 rounded-full font-semibold shadow-md hover:bg-gray-100 transition">Start
+                Voting</a>
+        </div>
+    </header>
+    <section id="about" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6 text-blue-900">About This Vote</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">48Intens Voting is an annual event to celebrate the JKT48 fanbase
+                community. It's a platform to recognize and reward the most active, creative, and supportive fanbases.
+                Cast your vote and show your support for your favorite community!</p>
+        </div>
+    </section>
+    <section id="candidates" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 text-center text-blue-900">Candidates for Best Fanbase</h2>
+            <div id="candidate-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
+        </div>
+        </div>
+    </section>
+
+    <div id="voteModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+        <div class="bg-white rounded-lg shadow-lg p-6 max-w-sm w-full max-h-[90vh] flex flex-col">
+            <h3 class="text-xl font-semibold text-blue-900 mb-4">Submit Your Vote</h3>
+            <form id="voteForm" class="flex flex-col overflow-hidden">
+                <p id="selectedCandidate" class="text-lg font-medium text-gray-800 mb-4"></p>
+                <div id="voteCodesContainer" class="overflow-y-auto max-h-[50vh] pr-2">
+                    <div class="voteCodeWrapper">
+                        <label for="voteCode1" class="block text-gray-700 font-semibold mb-2">Enter Vote Code:</label>
+                        <input 
+                            type="text" 
+                            id="voteCode1" 
+                            name="voteCodes"
+                            class="w-full border border-gray-300 rounded-lg p-2 mb-4" 
+                            placeholder="Enter your vote code"
+                            required 
+                        />
+                    </div>
+                </div>
+                <button 
+                    type="button" 
+                    id="addVoteCode"
+                    class="bg-blue-900 text-white px-4 py-2 rounded-lg hover:bg-blue-800 transition mb-4"
+                >
+                    Add Vote Code
+                </button>
+                <div class="flex justify-end space-x-4">
+                    <button 
+                        type="button" 
+                        id="cancelVote"
+                        class="bg-gray-300 text-gray-800 px-4 py-2 rounded-lg hover:bg-gray-400"
+                    >
+                        Cancel
+                    </button>
+                    <button 
+                        type="submit" 
+                        class="bg-blue-900 text-white px-4 py-2 rounded-lg hover:bg-blue-800"
+                    >
+                        Submit
+                    </button>
+                </div>
+            </form>
+            <div id="modalFeedback" class="mt-4 hidden"></div>
+        </div>
+    </div>
+
+
+    <section id="faq" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-6 text-center text-blue-900">Frequently Asked Questions</h2>
+            <div class="max-w-3xl mx-auto space-y-4">
+                <div class="bg-white shadow-md p-4 rounded-lg">
+                    <h3 class="font-semibold text-blue-900">How do I vote?</h3>
+                    <p class="text-gray-600">Click the "Vote" button under your favorite fanbase to submit your vote.
+                    </p>
+                </div>
+                <div class="bg-white shadow-md p-4 rounded-lg">
+                    <h3 class="font-semibold text-blue-900">Can I vote multiple times?</h3>
+                    <p class="text-gray-600">You can only vote once per day to ensure fairness.</p>
+                </div>
+                <div class="bg-white shadow-md p-4 rounded-lg">
+                    <h3 class="font-semibold text-blue-900">When will the results be announced?</h3>
+                    <p class="text-gray-600">The results will be announced on the official website and social media.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-blue-900 p-8 mt-auto">
+        <div class="flex flex-col md:flex-row justify-between items-start mb-8">
+            <div class="text-white text-2xl font-bold mb-6 md:mb-0">48Intens <span
+                    class="text-white text-lg text-base font-thin">Voting
+                    Website</span></div>
+        </div>
+        </div>
+        <div class="border-t border-white pt-8 flex flex-col md:flex-row justify-between items-center">
+            <p class="text-white mb-4 md:mb-0">&copy; 2024 48Intens Voting. All rights reserved.</p>
+            <div class="flex space-x-4">
+                <p class="text-white mb-4 md:mb-0">Version : 0.7.5</p>
+                <a href="https://github.com/Typicalsleepingboy" class="text-white hover:text-white">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.instagram.com/_naufaldzaky1/" class="text-white hover:text-white">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://x.com/Typicalsleeping" class="text-white hover:text-white">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const hamburgerButton = document.getElementById('hamburger-icon');
+        const mobileMenu = document.getElementById('mobile-menu'); 
+
+        hamburgerButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden'); 
+        });
+
+    </script>
+    <script src="/utils/vote.js"></script>
+
+</body>
+
+</html>

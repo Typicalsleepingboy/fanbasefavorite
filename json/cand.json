@@ -1,0 +1,56 @@
+[
+    {
+        "id": "1",
+        "name": "Ellatheria",
+        "imageUrl": "https://pbs.twimg.com/profile_banners/1299025559251382272/1723548125/1500x500",
+        "description": "Description or bio for Candidate 444."
+    },
+    {
+        "id": "2",
+        "name": "Jessinesi",
+        "imageUrl": "https://pbs.twimg.com/profile_banners/1065959984385613824/1727839428/1500x500",
+        "description": "Description or bio for Candidate 2."
+    },
+    {
+        "id": "3",
+        "name": "Interindah",
+        "imageUrl": "https://pbs.twimg.com/profile_banners/1210941490651774976/1725206762/1500x500",
+        "description": "Description or bio for Candidate 3."
+    },
+    {
+        "id": "4",
+        "name": "Raishanrise",
+        "imageUrl": "https://pbs.twimg.com/profile_banners/1285725304967712769/1731243747/1500x500",
+        "description": "Description or bio for Candidate 3."
+    },
+    {
+        "id": "5",
+        "name": "Muffin",
+        "imageUrl": "https://pbs.twimg.com/profile_banners/1046849584637534208/1725378325/1500x500",
+        "description": "Description or bio for Candidate 3."
+    },
+    {
+        "id": "6",
+        "name": "MarshaOshi",
+        "imageUrl": "https://pbs.twimg.com/profile_banners/1201355840550141952/1726491761/1500x500",
+        "description": "Description or bio for Candidate 3."
+    },
+    {
+        "id": "7",
+        "name": "Lunarian",
+        "imageUrl": "https://pbs.twimg.com/profile_banners/1150394863520628738/1729997839/1500x500",
+        "description": "Description or bio for Candidate 3."
+    },
+    {
+        "id": "8",
+        "name": "KATH, Inc",
+        "imageUrl": "https://pbs.twimg.com/profile_banners/1178943966063943680/1725283142/1500x500",
+        "description": "Description or bio for Candidate 3."
+    },
+    {
+        "id": "9",
+        "name": "Gitroops",
+        "imageUrl": "https://pbs.twimg.com/profile_banners/983866879985897472/1721109440/600x200",
+        "description": "Description or bio for Candidate 3."
+    }
+]
