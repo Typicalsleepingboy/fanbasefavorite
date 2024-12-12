@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 
 <head>
     <meta charset="UTF-8">
@@ -21,20 +21,20 @@
             </div>
             <ul id="navbarMenu" class="hidden lg:flex space-x-6">
                 <li><a href="#" class="hover:underline">Home</a></li>
-                <li><a href="#candidates" class="hover:underline">Candidates</a></li>
+                <li><a href="#" class="hover:underline">Candidates</a></li>
             </ul>
         </div>
 
         <div id="mobile-menu" class="md:hidden hidden  p-3 space-y-4">
             <a href="#" class="block text-white hover:bg-blue-800 p-2 rounded">Home</a>
-            <a href="#candidates" class="block text-white hover:bg-blue-800 p-2 rounded">Candidates</a>
+            <a href="#" class="block text-white hover:bg-blue-800 p-2 rounded">Candidates</a>
         </div>
     </nav>
     <header class="bg-blue-900 text-white py-16 text-center">
         <div class="container mx-auto px-4">
             <h1 class="text-4xl lg:text-6xl font-extrabold mb-4">Vote for Your Favorite JKT48 Fanbase!</h1>
             <p class="text-lg lg:text-xl mb-6">Support the community you love and make your voice heard.</p>
-            <a href="#candidates"
+            <a href="#"
                 class="bg-white text-blue-900 px-6 py-3 rounded-full font-semibold shadow-md hover:bg-gray-100 transition">Start
                 Voting</a>
         </div>
@@ -42,7 +42,8 @@
     <section id="about" class="py-16 bg-gray-50">
         <div class="container mx-auto px-4 text-center">
             <h2 class="text-3xl font-bold mb-6 text-blue-900">About This Vote</h2>
-            <p class="text-gray-600 max-w-2xl mx-auto">Fanbase Favorite is an annual event to celebrate the JKT48 fanbase
+            <p class="text-gray-600 max-w-2xl mx-auto">Fanbase Favorite is an annual event to celebrate the JKT48
+                fanbase
                 community. It's a platform to recognize and reward the most active, creative, and supportive fanbases.
                 Cast your vote and show your support for your favorite community!</p>
         </div>
@@ -63,35 +64,21 @@
                 <div id="voteCodesContainer" class="overflow-y-auto max-h-[50vh] pr-2">
                     <div class="voteCodeWrapper">
                         <label for="voteCode1" class="block text-gray-700 font-semibold mb-2">Enter Vote Code:</label>
-                        <input 
-                            type="text" 
-                            id="voteCode1" 
-                            name="voteCodes"
-                            class="w-full border border-gray-300 rounded-lg p-2 mb-4" 
-                            placeholder="Enter your vote code"
-                            required 
-                        />
+                        <input type="text" id="voteCode1" name="voteCodes"
+                            class="w-full border border-gray-300 rounded-lg p-2 mb-4" placeholder="Enter your vote code"
+                            required />
                     </div>
                 </div>
-                <button 
-                    type="button" 
-                    id="addVoteCode"
-                    class="bg-blue-900 text-white px-4 py-2 rounded-lg hover:bg-blue-800 transition mb-4"
-                >
+                <button type="button" id="addVoteCode"
+                    class="bg-blue-900 text-white px-4 py-2 rounded-lg hover:bg-blue-800 transition mb-4">
                     Add Vote Code
                 </button>
                 <div class="flex justify-end space-x-4">
-                    <button 
-                        type="button" 
-                        id="cancelVote"
-                        class="bg-gray-300 text-gray-800 px-4 py-2 rounded-lg hover:bg-gray-400"
-                    >
+                    <button type="button" id="cancelVote"
+                        class="bg-gray-300 text-gray-800 px-4 py-2 rounded-lg hover:bg-gray-400">
                         Cancel
                     </button>
-                    <button 
-                        type="submit" 
-                        class="bg-blue-900 text-white px-4 py-2 rounded-lg hover:bg-blue-800"
-                    >
+                    <button type="submit" class="bg-blue-900 text-white px-4 py-2 rounded-lg hover:bg-blue-800">
                         Submit
                     </button>
                 </div>
@@ -147,10 +134,10 @@
 
     <script>
         const hamburgerButton = document.getElementById('hamburger-icon');
-        const mobileMenu = document.getElementById('mobile-menu'); 
+        const mobileMenu = document.getElementById('mobile-menu');
 
         hamburgerButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden'); 
+            mobileMenu.classList.toggle('hidden');
         });
 
     </script>
